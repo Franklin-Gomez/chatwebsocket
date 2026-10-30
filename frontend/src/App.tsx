@@ -8,7 +8,8 @@ type Msg = {
 };
 
 // para que no se cree un nuevo socket cada vez que se renderiza el componente, lo creamos fuera del componente o lo podemos usar useMemo o useRef para que no se cree un nuevo socket cada vez que se renderiza el componente
-const socket = io("http://localhost:3000");  
+// const socket = io("http://localhost:3000");  
+const socket = io("import.meta.env.VITE_SERVER_URL");  
 
 function App() {
 

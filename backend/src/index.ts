@@ -12,7 +12,8 @@ const app = express();
 const server = createServer(app); // creando el servidor http
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    // origin: "*",
+    origin: process.env.CLIENT_URL 
   },
 
   connectionStateRecovery: {}
