@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "lib": [
+            "esnext"
+        ],
+        
+        "target": "ESNext",
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext",
+        "strict": false,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "types": ["node"],
+        "rewriteRelativeImportExtensions": true
+    },
+    
+    "include": [
+        "src/**/*.ts",
+        "src/prisma.config.ts"
+    ]
+}
